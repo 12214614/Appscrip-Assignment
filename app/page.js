@@ -3,6 +3,8 @@ import Hero from "../components/Hero";
 import CatalogSection from "../components/CatalogSection";
 import Footer from "../components/Footer";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const res = await fetch("https://fakestoreapi.com/products", {
     cache: "no-store",
