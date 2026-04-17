@@ -1,0 +1,49 @@
+.sidebar {
+  width: 280px;
+  padding: 20px;
+  border-right: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+/* FILTER SECTION */
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.filter-section label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 5px;
+  cursor: pointer;
+   align-items: center;
+  gap: 8px;
+}
+.filter-section h4,
+.filter-section h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* SHOW / HIDE */
+.sidebar.hide {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .sidebar {
+    position: absolute;
+    background: white;
+    z-index: 10;
+    min-height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+}
